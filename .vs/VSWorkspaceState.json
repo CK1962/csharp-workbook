@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\manyMethods",
+    "\\manyMethods\\ConsoleApp1"
   ],
-  "SelectedNode": "\\PigLatin",
+  "SelectedNode": "\\manyMethods\\ConsoleApp1\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -16,7 +16,9 @@ namespace manyMethods
             // CatDog();
             // OddEvent();
             //inches();
-            echo(();
+            echo();
+
+            Console.ReadLine();
         }
         public static void hello()
         {
@@ -77,7 +79,18 @@ namespace manyMethods
         public static void echo()
         {
             Console.WriteLine("Please enter your favorite word: ");
-            string name echo = Console.ReadLine();
+            string word = Console.ReadLine();
+
+            // upper
+            string wordUppercase = word.ToUpper();
+            Console.WriteLine(wordUppercase);
+
+
+            //lower
+            string wordLower = word.ToLower();
+            Console.WriteLine(wordLower);
+            Console.WriteLine(wordLower);
         }
+
     }
 }
