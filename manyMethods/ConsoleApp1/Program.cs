@@ -15,7 +15,7 @@ namespace manyMethods
             // echo();
             // Kilograms();
             // Date();
-            //  Age();
+              Age();
             Guess();
 
             Console.ReadLine();
