@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace manyMethods
 {
@@ -15,8 +11,12 @@ namespace manyMethods
             // Addition();
             // CatDog();
             // OddEvent();
-            //inches();
-            echo();
+            // inches();
+            // echo();
+            // Kilograms();
+            // Date();
+            //  Age();
+            Guess();
 
             Console.ReadLine();
         }
@@ -69,7 +69,7 @@ namespace manyMethods
 
         public static void inches()
         {
-            Console.WriteLine("Please enter your height to the nearest foot: ");
+            Console.WriteLine("Please enter your height: ");
             int num4 = int.Parse(Console.ReadLine());
             int product = num4 * 12;
             Console.WriteLine("You are approximately " + product + " inches tall");
@@ -92,5 +92,42 @@ namespace manyMethods
             Console.WriteLine(wordLower);
         }
 
+        public static void Kilograms()
+        {
+            Console.WriteLine("Please enter your ideal weight in pounds: ");
+            double pounds = double.Parse(Console.ReadLine());
+            double kilograms = pounds * .45359237;
+            Console.WriteLine("Kilograms: " + kilograms);
+        }
+
+        public static void Date()
+        {
+            DateTime current = DateTime.Now;
+            Console.WriteLine(current);
+        }
+
+        public static void Age()
+        {
+            Console.WriteLine("Please enter the year you were born: ");
+            int birthYear = int.Parse(Console.ReadLine());
+            int currentYear = DateTime.Now.Year;
+            int age = currentYear - birthYear;
+            Console.WriteLine(age);
+        }
+
+        public static void Guess()
+        {
+            Console.WriteLine("Please enter a word: ");
+            string guess = Console.ReadLine();
+            if (guess == "csharp")
+            {
+                Console.WriteLine("CORRECT!!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong!!");
+            }
+
+        }
     }
 }
